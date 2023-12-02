@@ -19,3 +19,32 @@ h1, h2, h3
     font-weight: bold
     color: #554d89
 
+.divider
+    border: none
+    border-bottom: 1px solid #e1e4ed 
+
+.wrapper
+    width: 1146px
+    margin: 0 auto
+
+.top-header
+    display: flex
+    justify-content: space-between
+    padding: 2.4rem 0 1.7rem
+    font-size: 1.6rem
+    &__text
+        color: #716c80
+    &__phone
+        color: #716c80
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+        &::before
+            content: "\f095" 
+            font-family: "FontAwesome"
+            margin-right: .8rem  
+
+.header
+    display: flex
+    justify-content: space-between
+    padding-top: 2.6rem
