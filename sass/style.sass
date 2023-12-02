@@ -19,6 +19,20 @@ h1, h2, h3
     font-weight: bold
     color: #554d89
 
+.btn
+    border: none
+    text-decoration: none
+    height: 4rem
+    border-radius: 4rem
+    padding: 0 1.5rem
+    font-family: "Poppins", sans-serif
+
+.btn-light
+    background-color: transparent
+    border: 1px solid #6852ed
+    font-size: 1.4rem
+    color: #6852ed
+
 .divider
     border: none
     border-bottom: 1px solid #e1e4ed 
@@ -44,7 +58,56 @@ h1, h2, h3
             font-family: "FontAwesome"
             margin-right: .8rem  
 
+.header-navbar
+    display: flex
+    align-items: center
+
 .header
     display: flex
     justify-content: space-between
-    padding-top: 2.6rem
+    align-items: center
+    padding-top: 1rem
+    &__logo
+        display: block
+        margin-right: 5.8rem
+    &__menu
+        display: flex
+    &__menu-item
+        margin-right: 3rem
+        position: relative
+        padding: 1.8rem 0
+        &:last-child
+            margin-right: 0
+        &:hover .header__submenu
+            display: block
+    &__menu-link
+        color: #5B5766
+        font-size: 1.6rem
+        text-decoration: none
+        &_active
+            color: #554d89
+            font-weight: 700
+        &:hover
+            color: #554d89
+            text-shadow: 0 0 1px #554d89
+    &__submenu
+        display: none
+        position: absolute
+        top: 5.4rem
+        left: -3rem
+        padding: 3rem
+        border-radius: 10px
+        background-color: #FFF
+        box-shadow: 0px 0px 20px 0px #E1E4ED
+        & > .header__menu-item
+            padding: 0
+            margin-bottom: 1rem
+            &:last-child
+                margin-bottom: 0
+
+.header-actions
+    &__text
+        display: inline-block
+        margin: 0 .5rem
+
+
