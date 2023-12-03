@@ -282,3 +282,41 @@ h1, h2, h3 {
   color: #fff;
   margin-top: 3rem;
 }
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.article__img {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.article__content {
+  width: 50%;
+  flex-shrink: 0;
+  padding-left: 6.6rem;
+}
+
+.article__title {
+  width: 41.2rem;
+  font-size: 2.8rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.article__text {
+  color: #716C80;
+  margin-bottom: 6rem;
+}
+
+.article .btn {
+  margin-right: 3rem;
+}
+
+.article_reverse {
+  flex-direction: row-reverse;
+}
