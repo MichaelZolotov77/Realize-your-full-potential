@@ -36,6 +36,8 @@ h1, h2, h3
     color: #6852ed
 
 .btn-dark
+    font-size: 1.6rem
+    letter-spacing: .5px
     color: #fff
     background: linear-gradient(27deg, #6852ED 16.67%, #BA43FC 100%)
     padding: 1.3rem 3rem
@@ -232,3 +234,67 @@ h1, h2, h3
         margin-right: 3rem
     &_reverse
         flex-direction: row-reverse
+
+
+
+
+.prices
+    display: flex
+    justify-content: center
+    margin-bottom: 14rem
+
+.price
+    &-item
+        width: 36rem
+        padding: 6rem
+        border-radius: 1rem
+        box-shadow: 0px 0px 20px 0px #E1E4ED
+        background-color: #fff
+        position: relative
+        &_best::before
+            position: absolute
+            right: 6rem
+            top: 6.4rem
+            content: "best choice"
+            text-transform: uppercase
+            font-size: 1rem
+            color: #ef7171
+            background-color: #E1E4ED99
+            border-radius: 13px
+            padding: .6rem 1rem
+    &__tarif
+        font-size: 2rem
+        line-height: 1.5
+        margin-bottom: 1.9rem
+    &__divider
+        width: 4rem
+        height: .2rem
+        border-radius: .2rem
+        background-color: #ba43fc
+    &__sum
+        font-family: "Poppins", sans-serif
+        font-size: 5rem
+        font-weight: bold
+        line-height: 1.2
+        margin-top: 0.9rem
+        margin-bottom: 1rem
+    &__period
+        opacity: .8
+        font-size: 1.6rem
+    &__features
+        padding: 6rem 0
+    &__list
+        color: #716C80
+        margin-bottom: 1rem
+        position: relative
+        &::before
+            font-family: "FontAwesome"
+            margin-right: 0.8rem
+            content: "\f00c"
+            font-size: 18px
+            color: #6852ED
+        &_xmark::before
+            content: "\f00d"
+            color: #EF7171
+            
+            
